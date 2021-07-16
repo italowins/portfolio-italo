@@ -59,6 +59,10 @@ header .container {
     padding: 0 100px;
 }
 
+header .container img {
+    display: none;
+}
+
 header .container h1 {
     color: var(--green);
 }
@@ -78,6 +82,12 @@ nav {
     background-color: var(--bg-dark);
 }
 
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
 nav img {
     height: 45px;
 }
@@ -85,11 +95,61 @@ nav img {
 nav ul a {
     text-decoration: none;
     color: var(--green);
-    margin: 0 60px;
     font-size: 24px;
 }
 
 section {
     height: 1500px;
     background-color: purple;
+}
+
+
+/* responsividade */
+
+@media (max-width: 1000px) {
+    header .container {
+        width: 100%;
+    }
+    nav {
+        padding: 20px;
+    }
+    nav ul a {
+        font-size: 20px;
+    }
+}
+
+
+/* tablet */
+
+@media (max-width: 767px) {
+    header .container {
+        width: 100%;
+    }
+    header .container img {
+        display: inline;
+        width: 100px;
+        margin-bottom: 60px;
+    }
+    nav {
+        padding: 0;
+    }
+    nav img {
+        display: none;
+    }
+    nav ul {
+        padding: 10px;
+    }
+    nav ul a {
+        font-size: 16px;
+    }
+}
+
+
+/* celular */
+
+@media (max-width: 480px) {
+    header .container {
+        /* width: 100%; */
+        padding: 0 40px;
+    }
 }
