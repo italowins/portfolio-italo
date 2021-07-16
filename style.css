@@ -98,6 +98,10 @@ nav ul a {
     font-size: 24px;
 }
 
+nav ul a svg {
+    display: none;
+}
+
 section {
     height: 1500px;
     background-color: purple;
@@ -151,5 +155,12 @@ section {
     header .container {
         /* width: 100%; */
         padding: 0 40px;
+    }
+    nav ul a {
+        font-size: 12px;
+    }
+    nav ul a svg {
+        display: block;
+        margin: 0 auto 10px;
     }
 }
