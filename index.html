@@ -18,7 +18,7 @@
         <div class="container">
             <img src="./assets/logo.svg" alt="logo">
             <h2>Hello,</h2>
-            <h1>I am Italo Handerson</h1>
+            <h1 class="title-green">I am Italo Handerson</h1>
             <p>Sou formado em Sistemas de Informação pela universidade Estácio de Sá - FAL. Sou desenvolvedor front-end. Atualmente estudando Vue JS. </p>
             <button>Entre em contato</button>
         </div>
@@ -26,14 +26,28 @@
     <nav>
         <img src="./assets/logo.svg" alt="logo">
         <ul>
-            <a href=""><i data-feather="user"></i>Sobre</a>
+            <a href="#about-me"><i data-feather="user"></i>Sobre</a>
             <a href=""><i data-feather="briefcase"></i>Serviços</a>
             <a href=""><i data-feather="image"></i>Portfólio</a>
             <a href=""><i data-feather="list"></i>Currículo</a>
             <a href=""><i data-feather="send"></i>Contato</a>
         </ul>
     </nav>
-    <section>Olá</section>
+
+    <section id="about-me" class="about-me">
+        <div class="container">
+            <h1 class="title-green">Sobre mim</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A tempore, unde totam quasi doloremque cumque sint placeat ratione expedita quibusdam nostrum? Repellendus qui maxime expedita voluptatem sequi. Laboriosam, adipisci est?
+            </p>
+        </div>
+        <div class="img-container">
+            <div class="line green"></div>
+            <div class="line purple"></div>
+            <img src="./assets/profile.jpg" alt="Italo Handerson">
+        </div>
+    </section>
+
     <script>
         feather.replace()
     </script>

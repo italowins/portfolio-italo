@@ -25,6 +25,14 @@ textarea {
     color: white;
 }
 
+.title-green {
+    color: var(--green);
+}
+
+.title-purple {
+    color: var(--purple);
+}
+
 h1 {
     font-size: 44px;
 }
@@ -63,10 +71,6 @@ header .container img {
     display: none;
 }
 
-header .container h1 {
-    color: var(--green);
-}
-
 header .container button {
     margin-top: 38px;
 }
@@ -102,9 +106,42 @@ nav ul a svg {
     display: none;
 }
 
-section {
-    height: 1500px;
-    background-color: purple;
+.about-me {
+    display: flex;
+    align-items: space-between;
+    padding: 100px;
+}
+
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .img-container {
+    width: 30%;
+    text-align: center;
+    position: relative;
+}
+
+.about-me .img-container img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-me .img-container .line {
+    width: calc(70% + 50px);
+    height: calc(100% + 50px);
+    border: 1px solid var(--purple);
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 70%/2 - 25px);
+}
+
+.about-me .img-container .line.green {
+    transform: rotate(-3.3deg);
+    /* color: var(--green); */
+    border: 1px solid var(--green);
 }
 
 
@@ -120,6 +157,23 @@ section {
     nav ul a {
         font-size: 20px;
     }
+}
+
+.about-me {
+    flex-direction: column;
+}
+
+.about-me .container,
+.about-me .img-container {
+    width: 100%;
+}
+
+.about-me .container {
+    padding-right: 0;
+}
+
+.about-me .img-container {
+    margin-top: 50px;
 }
 
 
@@ -161,6 +215,7 @@ section {
         position: fixed;
         top: unset;
         bottom: 0;
+        z-index: 99;
     }
     nav ul a {
         font-size: 12px;
@@ -168,5 +223,8 @@ section {
     nav ul a svg {
         display: block;
         margin: 0 auto 10px;
+    }
+    .about-me {
+        padding: 0 40px;
     }
 }
