@@ -53,6 +53,7 @@ button {
     color: white;
     font-weight: bold;
     font-size: 18px;
+    cursor: pointer;
 }
 
 header {
@@ -157,23 +158,19 @@ nav ul a svg {
     nav ul a {
         font-size: 20px;
     }
-}
-
-.about-me {
-    flex-direction: column;
-}
-
-.about-me .container,
-.about-me .img-container {
-    width: 100%;
-}
-
-.about-me .container {
-    padding-right: 0;
-}
-
-.about-me .img-container {
-    margin-top: 50px;
+    .about-me {
+        flex-direction: column;
+    }
+    .about-me .container,
+    .about-me .img-container {
+        width: 100%;
+    }
+    .about-me .container {
+        padding-right: 0;
+    }
+    .about-me .img-container {
+        margin-top: 50px;
+    }
 }
 
 
