@@ -27,10 +27,10 @@
         <img src="./assets/logo.svg" alt="logo">
         <ul>
             <a href="#about-me"><i data-feather="user"></i>Sobre</a>
-            <a href=""><i data-feather="briefcase"></i>Serviços</a>
-            <a href=""><i data-feather="image"></i>Portfólio</a>
-            <a href=""><i data-feather="list"></i>Currículo</a>
-            <a href=""><i data-feather="send"></i>Contato</a>
+            <a href="#services"><i data-feather="briefcase"></i>Serviços</a>
+            <a href="#portfolio"><i data-feather="image"></i>Portfólio</a>
+            <a href="#curriculum"><i data-feather="list"></i>Currículo</a>
+            <a href="#contact"><i data-feather="send"></i>Contato</a>
         </ul>
     </nav>
 
@@ -48,7 +48,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
         <h1 class="title-purple">Serviços</h1>
         <div class="services-container">
             <div class="service-card">
@@ -69,11 +69,12 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <h1 class="title-green">Portfolio</h1>
         <div class="portfolio-container">
             <div class="portfolio-card">
                 <div class="img-container">
+                    <div class="line green"></div>
                     <img src="./assets/portfolio-linktree.png" alt="">
                 </div>
                 <div class="language-container">
@@ -88,6 +89,7 @@
             </div>
             <div class="portfolio-card">
                 <div class="img-container">
+                    <div class="line green"></div>
                     <img src="./assets/portfolio-linktree.png" alt="">
                 </div>
                 <div class="language-container">
@@ -102,6 +104,7 @@
             </div>
             <div class="portfolio-card">
                 <div class="img-container">
+                    <div class="line green"></div>
                     <img src="./assets/portfolio-linktree.png" alt="">
                 </div>
                 <div class="language-container">
@@ -115,10 +118,46 @@
                 <p>Projeto feito usando html, css e js com o objetivo de ser um agrupador de links para o instagram.</p>
             </div>
         </div>
-
-
-
     </section>
+    <section id="curriculum" class="curriculum">
+        <h1 class="title-green">Currículo</h1>
+        <div class="container">
+            <img class="curriculum-img" src="./assets/curriculum-img.png" alt="">
+            <div class="content">
+                <div class="curriculum-info">
+                    <span>Nome</span><b>Italo Handerson</b>
+                    <span>Idade</span><b>33 anos</b>
+                    <span>Formação</span><b>Sistemas de Informação</b>
+                    <span>Cidade</span><b>Maceió</b>
+                    <span>Telefone</span><b>82.99909-6128</b>
+                    <span>Email</span><b>italowins@outlook.com</b>
+                    <span>Freelance</span><b>Disponível</b>
+                    <span>Exp</span><b>HTML, CSS, JS, Vue JS</b>
+                    <span>Idiomas</span><b>Inglês (intermediário)</b>
+                </div>
+                <button class="secondary-button">
+                    <img src="./assets/save-icon.png" alt="">
+                    Baixe meu currículo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h1>Vamos trabalhar juntos?</h1>
+        <p>Se você gostou do meu trabalho e quer que eu tire sua ideia do papel ou faça parte do seu time, entre em contato comigo! </p>
+        <button>Entre em contato</button>
+        <div class="social-media">
+            <a href="https://www.instagram.com/italowins"><img src="./assets/instagram.png" alt=""></a>
+            <a href=""><img src="./assets/youtube.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/%C3%ADtalo-handerson-744897146/"><img src="./assets/linkedin.png" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=5582999096128"><img src="./assets/whatsapp.png" alt=""></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Italo Handerson - 2021</p>
+    </footer>
 
     <script>
         feather.replace()
